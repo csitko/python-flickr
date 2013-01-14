@@ -191,7 +191,7 @@ class FlickrAPI(object):
         return dict(parse_qsl(content))
 
     def api_request(self, endpoint=None, method='GET', params={}, files=None, replace=False):
-        self.headers.update({'Content-Type': 'application/json'})
+#        self.headers.update({'Content-Type': 'application/json'})
 
         if endpoint is None and files is None:
             raise FlickrAPIError('Please supply an API endpoint to hit.')
